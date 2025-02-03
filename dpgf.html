@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Travaux</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Tableau Général */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* En-tête du tableau */
+        th {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 1.1em;
+        }
+
+        /* Cellules du tableau */
+        td {
+            text-align: center;
+            padding: 12px;
+            border: 1px solid #ddd;
+            font-size: 1em;
+        }
+
+        /* Aligner verticalement à gauche le contenu des cellules */
+        td,
+        th {
+            text-align: left;
+            padding-left: 0;
+        }
+
+        /* En-tête de la première colonne alignée à gauche */
+        th:first-child {
+            text-align: left;
+            padding-left: 0;
+        }
+
+        /* Effet sur les lignes paires */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Lignes au survol */
+        tr:hover {
+            background-color: #dfe6e9;
+        }
+
+        /* Bordure du tableau */
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+            width: 1000px;
+        }
+
+        /* Mise en valeur des cellules avec texte important */
+        td.important {
+            background-color: #f39c12;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Style pour les titres */
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        /* Amélioration de l'espacement des cellules */
+        th,
+        td {
+            padding: 15px;
+        }
+
+        /* Réponse correcte et incorrecte */
+        .correct {
+            color: #27ae60;
+            /* Vert pour la bonne réponse */
+        }
+
+        .incorrect {
+            color: #e74c3c;
+            /* Rouge pour la mauvaise réponse */
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Art.</th>
+                <th>Désignation</th>
+                <th>U</th>
+                <th>Q</th>
+                <th>PU (€)</th>
+                <th>Total (€)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="6"><strong>TRAVAUX PRÉPARATOIRES</strong></td>
+            </tr>
+            <tr>
+                <td>1.01</td>
+                <td>Installation de chantier</td>
+                <td>u</td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1.02</td>
+                <td>Gestion des déchets</td>
+                <td>u</td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1.03</td>
+                <td>Sécurité</td>
+                <td>u</td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1.04</td>
+                <td>Décapage des sols</td>
+                <td>m²</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="6"><strong>TERRASSEMENTS</strong></td>
+            </tr>
+            <tr>
+                <td>2.01</td>
+                <td>Fouilles en pleine masse</td>
+                <td>m³</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2.02</td>
+                <td>Fouilles en puits</td>
+                <td>m³</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2.03</td>
+                <td>Fouilles en rigole</td>
+                <td>m³</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2.04</td>
+                <td>Remblaiement périphérique</td>
+                <td>m³</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2.05</td>
+                <td>Nivellement des terrains</td>
+                <td>m²</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="6"><strong>FONDATIONS SPÉCIALES</strong></td>
+            </tr>
+            <tr>
+                <td>3.01</td>
+                <td>Installations pour fondations spéciales</td>
+                <td>u</td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3.02</td>
+                <td>Pieux</td>
+                <td>ml</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3.03</td>
+                <td>Béton de fondation</td>
+                <td>m³</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3.04</td>
+                <td>Aciers HA</td>
+                <td>kg</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3.05</td>
+                <td>Étanchéité et drainage</td>
+                <td>u</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3.06</td>
+                <td>Coffrage</td>
+                <td>m²</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3.07</td>
+                <td>Aciers Treillis Soudé</td>
+                <td>kg</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="6"><strong>FONDATIONS</strong></td>
+            </tr>
+            <tr>
+                <td>4.01</td>
+                <td>Béton de propreté</td>
+                <td>m³</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4.02</td>
+                <td>Béton de longrines</td>
+                <td>m³</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4.03</td>
+                <td>Coffrage de longrines</td>
+                <td>m²</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4.04</td>
+                <td>Aciers HA</td>
+                <td>kg</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4.05</td>
+                <td>Drain périphérique</td>
+                <td>ml</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4.06</td>
+                <td>Aciers Treillis Soudé</td>
+                <td>kg</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="6"><strong>DALLAGES</strong></td>
+            </tr>
+            <tr>
+                <td>5.01</td>
+                <td>Couche de réglage sous dallage</td>
+                <td>m²</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5.02</td>
+                <td>Film polyane</td>
+                <td>m²</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5.03</td>
+                <td>Isolant sous dallage</td>
+                <td>m²</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5.04</td>
+                <td>Dallage porté (béton armé + aciers)</td>
+                <td>m³</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5.05</td>
+                <td>Aciers HA</td>
+                <td>kg</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5.06</td>
+                <td>Aciers TS</td>
+                <td>kg</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5.07</td>
+                <td>Coffrage</td>
+                <td>m²</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="6"><strong>OUVRAGES EN ÉLÉVATION DU REZ-DE-CHAUSSÉE</strong></td>
+            </tr>
+            <tr>
+                <td>6.01</td>
+                <td>Béton pour poteaux</td>
+                <td>m³</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6.02</td>
+                <td>Coffrage de poteaux</td>
+                <td>m²</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6.03</td>
+                <td>Béton pour murs</td>
+                <td>m³</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6.04</td>
+                <td>Coffrage de murs</td>
+                <td>m²</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6.05</td>
+                <td>Aciers HA</td>
+                <td>kg</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>6.06</td>
+                <td>Aciers TS</td>
+                <td>kg</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="6"><strong>ESCALIERS</strong></td>
+            </tr>
+            <tr>
+                <td>9.01</td>
+                <td>Escalier en béton armé</td>
+                <td>u</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9.02</td>
+                <td>Coffrage</td>
+                <td>m²</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9.03</td>
+                <td>Aciers HA</td>
+                <td>kg</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9.04</td>
+                <td>Coffrage</td>
+                <td>m²</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9.05</td>
+                <td>Aciers HA</td>
+                <td>kg</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="6"><strong>TRAVAUX DIVERS</strong></td>
+            </tr>
+            <tr>
+                <td>10.01</td>
+                <td>Pose d'huisseries</td>
+                <td>u</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10.02</td>
+                <td>Pose de fourreaux fonte</td>
+                <td>ml</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10.03</td>
+                <td>Socle pour nourrice</td>
+                <td>u</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10.04</td>
+                <td>Seuils maçonnés</td>
+                <td>ml</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

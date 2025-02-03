@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Travaux</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: white;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        .total-chapitre {
+            background-color: #e0e0e0;
+            font-weight: bold;
+        }
+
+        .highlight {
+            background-color: #ffeb3b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Art.</th>
+                <th>Désignation</th>
+                <th>Longueur</th>
+                <th>Largeur</th>
+                <th>Hauteur/Épaisseur</th>
+                <th>+</th>
+                <th>-</th>
+                <th>U</th>
+                <th>Q</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="total-chapitre">
+                <td>1.00</td>
+                <td>TRAVAUX PRÉPARATOIRES</td>
+                <td colspan="7"></td>
+            </tr>
+            <tr>
+                <td>1,01</td>
+                <td>Installation de chantier</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>forf</td>
+                <td>1,00</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1,02</td>
+                <td>Gestion des déchets</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>forf</td>
+                <td>1,00</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1,03</td>
+                <td>Sécurité</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>forf</td>
+                <td>1,00</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td></td>
+                <td>Total chapitre TRAVAUX PRÉPARATOIRES</td>
+                <td colspan="6"></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td>2.00</td>
+                <td>TERRASSEMENTS</td>
+                <td colspan="7"></td>
+            </tr>
+            <tr>
+                <td>2,01</td>
+                <td>Décapage</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>forf</td>
+                <td>1,00</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2,02</td>
+                <td>Fouilles en pleine masse</td>
+                <td>m3</td>
+                <td>370,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2,03</td>
+                <td>Fouilles en puits</td>
+                <td>m3</td>
+                <td>26,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2,04</td>
+                <td>Fouille en rigole</td>
+                <td>m3</td>
+                <td>62,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2,05</td>
+                <td>Remblaiement périphérique</td>
+                <td>m3</td>
+                <td>46,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td></td>
+                <td>Total chapitre TERRASSEMENTS</td>
+                <td colspan="6"></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td>3.00</td>
+                <td>FONDATIONS SPÉCIALES</td>
+                <td colspan="7"></td>
+            </tr>
+            <tr>
+                <td>3,01</td>
+                <td>Installations pour fondations spéciales</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>forf</td>
+                <td>1,00</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3,02</td>
+                <td>Pieux</td>
+                <td>u</td>
+                <td>41,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3,03</td>
+                <td>Béton de fondation</td>
+                <td>m3</td>
+                <td>19,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3,04</td>
+                <td>Aciers HA</td>
+                <td>kg</td>
+                <td>1 470,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3,05</td>
+                <td>Coffrage</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td></td>
+                <td>Total chapitre FONDATIONS SPÉCIALES</td>
+                <td colspan="6"></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td>4.00</td>
+                <td>STRUCTURE</td>
+                <td colspan="7"></td>
+            </tr>
+            <tr>
+                <td>4,01</td>
+                <td>Béton armé</td>
+                <td>m3</td>
+                <td>200,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4,02</td>
+                <td>Acier pour béton armé</td>
+                <td>kg</td>
+                <td>3 500,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td></td>
+                <td>Total chapitre STRUCTURE</td>
+                <td colspan="6"></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td>5.00</td>
+                <td>CLOISONS</td>
+                <td colspan="7"></td>
+            </tr>
+            <tr>
+                <td>5,01</td>
+                <td>Montage des cloisons</td>
+                <td>m2</td>
+                <td>100,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td></td>
+                <td>Total chapitre CLOISONS</td>
+                <td colspan="6"></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td>6.00</td>
+                <td>REVÊTEMENTS DE SOL</td>
+                <td colspan="7"></td>
+            </tr>
+            <tr>
+                <td>6,01</td>
+                <td>Carrelage</td>
+                <td>m2</td>
+                <td>150,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td></td>
+                <td>Total chapitre REVÊTEMENTS DE SOL</td>
+                <td colspan="6"></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td>7.00</td>
+                <td>PEINTURE</td>
+                <td colspan="7"></td>
+            </tr>
+            <tr>
+                <td>7,01</td>
+                <td>Peinture intérieure</td>
+                <td>m2</td>
+                <td>200,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td></td>
+                <td>Total chapitre PEINTURE</td>
+                <td colspan="6"></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td>8.00</td>
+                <td>ÉLECTRICITÉ</td>
+                <td colspan="7"></td>
+            </tr>
+            <tr>
+                <td>8,01</td>
+                <td>Installation électrique</td>
+                <td>forf</td>
+                <td>1,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td></td>
+                <td>Total chapitre ÉLECTRICITÉ</td>
+                <td colspan="6"></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td>9.00</td>
+                <td>CANALISATION</td>
+                <td colspan="7"></td>
+            </tr>
+            <tr>
+                <td>9,01</td>
+                <td>Réseau d'eau</td>
+                <td>m</td>
+                <td>500,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td></td>
+                <td>Total chapitre CANALISATION</td>
+                <td colspan="6"></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td>10.00</td>
+                <td>ASSAINISSEMENT</td>
+                <td colspan="7"></td>
+            </tr>
+            <tr>
+                <td>10,01</td>
+                <td>Réseau d'assainissement</td>
+                <td>m</td>
+                <td>300,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td></td>
+                <td>Total chapitre ASSAINISSEMENT</td>
+                <td colspan="6"></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td>11.00</td>
+                <td>AMÉNAGEMENT EXTÉRIEUR</td>
+                <td colspan="7"></td>
+            </tr>
+            <tr>
+                <td>11,01</td>
+                <td>Aménagement de jardin</td>
+                <td>m2</td>
+                <td>150,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11,02</td>
+                <td>Clôture</td>
+                <td>m</td>
+                <td>50,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11,03</td>
+                <td>Allée d'accès</td>
+                <td>m2</td>
+                <td>100,00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="total-chapitre">
+                <td></td>
+                <td>Total chapitre AMÉNAGEMENT EXTÉRIEUR</td>
+                <td colspan="6"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
